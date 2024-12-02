@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "npm install --legacy-peer-deps && next build",
     "dev": "next dev",
     "json-server": "json-server --watch app/api/data.json --port 3001",
     "start": "concurrently \"npm run dev\" \"npm run json-server\""
